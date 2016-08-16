@@ -1,23 +1,19 @@
 // ==UserScript==
 // @name           Frozen Cookies
 // @version        github-latest
-// @description    Userscript to load Frozen Cookies written by Icehawk78
+// @description    Userscript to load Frozen Cookies written by Icehawk78, modified by mtnewton
 // @author         shinji257
-// @homepage       https://github.com/Icehawk78/FrozenCookies
+// @homepage       https://github.com/mtnewton/FrozenCookies
 // @include        http://orteil.dashnet.org/cookieclicker/
-// @updateURL      http://icehawk78.github.io/FrozenCookies/fc_userscript_loader.js
-// @downloadURL    http://icehawk78.github.io/FrozenCookies/fc_userscript_loader.js
+// @updateURL      https://rawgithub.com/mtnewton/FrozenCookies/master/fc_userscript_loader.user.js
+// @downloadURL    https://rawgithub.com/mtnewton/FrozenCookies/master/fc_userscript_loader.user.js
 // ==/UserScript==
-
-// Dev:       https://raw.github.com/Icehawk78/FrozenCookies/development/
-// Master:    https://raw.github.com/Icehawk78/FrozenCookies/master/
-// Github.io: http://icehawk78.github.io/FrozenCookies/
 
 function LoadFrozenCookies() {
   var js = document.createElement('script');
   js.setAttribute('type', 'text/javascript');
   js.setAttribute('id', 'frozenCookieScript');
-  js.setAttribute('src', 'https://raw.github.com/Icehawk78/FrozenCookies/master/frozen_cookies.js');
+  js.setAttribute('src', 'https://rawgithub.com/mtnewton/FrozenCookies/master/frozen_cookies.js');
   document.head.appendChild(js);
 }
 // It's not the best way but Chrome doesn't work with addEventListener... :(
